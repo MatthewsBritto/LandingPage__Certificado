@@ -1,29 +1,30 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import info from '../../../utils/json/certificates.json'
-import {FormInfosContainer,Infos} from './styles';
+import {FormInfosContainer} from './styles';
+
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+
 
 function FormInfos() {
   
-  const [idcomp,setIdComp] = useState('96c7d86d-698d-4b60-9f0e-73be61d7dc71');
+  const [idcomp,setIdComp] = useState('7c6712ca-541e-4357-9663-2addf696410b');
 
   const [type,setType] = useState([]);
 
-  const [options,setOptions] = useState([]);
 
   const [name,setName] = useState();
 
-  const [value,setValue] = useState();
+  
+  useEffect(()=>{
 
-  const [selectedInfo, setSelectedInfo] = useState('');
+    handleClick(idcomp);
 
 
-  useEffect(() => {
-    
-    setOptions([]);
-    setDesc([]);
-    setValue([]);
-    
-  },[idcomp])
+  },[])
 
 
   const handleClick = useCallback((id)=> { 
@@ -48,6 +49,38 @@ function FormInfos() {
 
   },[]);
 
+  const settings = {
+
+    // dots: true,
+    // infinite: true,
+    // speed: 500,
+    // slidesToShow: 3,
+    // slidesToScroll: 3,
+    variableWidth: true,
+    variableHeight:true,
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow:3,
+    slidesToScroll: 2,
+    autoplay: false,
+    autoplaySpeed: 5000,
+    pauseOnFocus: true,
+    arrows: true,
+    adaptiveHeight: true,
+    rows: 1,
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          rows: 1,
+        },
+      },
+    ],
+  };
+
 
   return (
 
@@ -66,26 +99,39 @@ function FormInfos() {
             </li>
 
         )})}
-        </ul>  
+        </ul> 
+
       
-      <Infos>
-        
-        {type && type.map( (id)  =>  {
+      
+      <section>
+        <Slider {...settings}> 
+            {type && type.map( (id)  =>  {
+              return  ( 
 
-        return  ( 
-              <div key={type.id}>
-                  <h2>{}</h2>
-                  <h3>{id.label}</h3>
-                  <p>{id.description}</p>
-                  <p>{id.tempo}</p>
-                  <p>R$ {id.value},00</p>
-                  <button>Cta teste</button>
 
-              </div>
-              )
-      })}
+                  <div key={type.id}>
+                      
+                        <h3>{name} {id.label}</h3>
+                        <div className="infos">
+                          <p>{id.description}</p>
+                          <p>{id.tempo}</p>
+                          <p className='price'>R${id.value},00</p>
+                        </div>
+                        <a>Saiba Mais</a>
+                      
+                  </div>
 
-      </Infos>
+                )
+              })
+            }
+        </Slider>
+      </section>
+
+      <article>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Accusantium nihil nesciunt sapiente ipsum! <br/>
+          Modi, architecto provident excepturi voluptate magnam culpa soluta fugiat impedit</p>
+      </article>
     </FormInfosContainer>
   );
 }

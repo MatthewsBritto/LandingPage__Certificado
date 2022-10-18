@@ -8,61 +8,9 @@ export const HeroContainer = styled.div`
     height: 100vh;
     text-align: center;
     margin: 0 auto;
-    /* 
-    ${(props) => props.mudacor && css`
-        background-color:blue;
-        
-    `} */
-
-    .logo{
-        width:300px
-    }
     
-    div {
-
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-
-        width: 100%;
-        //height:50%;
-        margin: 0 auto;
-        text-align: center;
-        /* padding-top: 10rem; */
-        justify-content:center;
-        
-        
-        h3{
-            padding: 0rem .6rem;
-            color:#fff;
-            font-size:2rem;
-            line-height:4rem;
-            grid-area: h3;
-        }
-        
-        img{
-            max-width: 75%;
-            padding: 1.5rem 0;
-            grid-area:img;
-        }
-
-        button{
-           
-            padding: 1.2rem 2rem;
-            letter-spacing: .1rem;
-            font-size: 1rem;
-            font-weight:bold;
-            text-transform: capitalize;
-            grid-area:btn;
-            margin-top:2rem;
-            background: #02b0f9;
-            color: white;
-            border:none;
-            border-radius: 10px;
-        }
-    }
   
-    @media (min-width: 768px){
+    /* @media (min-width: 768px){
 
 
 
@@ -113,5 +61,5 @@ export const HeroContainer = styled.div`
             margin-top:1.5rem;
         }
     }   
-}
+} */
 `;

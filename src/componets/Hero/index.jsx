@@ -5,17 +5,20 @@ import heroimg from '../../assets/herotest.jpg';
  import { HeroContainer } from './styles';
 
 function Hero() {
+
   return (
   <HeroContainer>
+      
       <img src={logo} className='logo'/>
-      <div>
-         <h3>
-            Lorem ipsum dolor sit amet consectetur
-         </h3>
-         <img src={heroimg}/>
+         <div>
+            <h3>
+               Comodidade, Praticidade e Confiança.
+            </h3>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus, eaque sapiente corrupti exercitationem similique assumenda laborum reiciendis alias optio magnam.
+            </p>
 
-         <button type="submit">batatinha</button>
-      </div>
+         </div>
    </HeroContainer>)
 }
 
