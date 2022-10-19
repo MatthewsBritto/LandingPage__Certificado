@@ -13,9 +13,9 @@ function Container() {
   return (
     <MainContainer>
       <CenterContainer>
+        <Carrossel/>
         <FormInfos/>
         <Hero/> 
-        <Carrossel/>
         <WhatsBtn/>          
       </CenterContainer>
     </MainContainer>

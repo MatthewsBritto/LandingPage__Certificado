@@ -15,6 +15,7 @@ function FormInfos() {
 
   const [type,setType] = useState([]);
 
+  const [obj,setObj] = useState({});
 
   const [name,setName] = useState();
 
@@ -22,25 +23,32 @@ function FormInfos() {
   useEffect(()=>{
 
     handleClick(idcomp);
-
+  
 
   },[])
 
+  const setActive = useCallback ((obj)=>{
 
+    const objActive = obj.active;
+
+    if(!objActive){
+      obj.active = true;
+  }
+    
+  })
   const handleClick = useCallback((id)=> { 
 
-    setIdComp(id)
+    setIdComp(id);
     
     const obj = info.find(E => E.id === id);
     
   
-    if(obj){
+    if(obj) {
+      setObj(obj)
       setName(obj.name)
       setType(obj.type);
       
-      // setDesc(obj.description);
-
-      console.log(type)
+           
 
     } else {
       setType([]);
@@ -98,7 +106,7 @@ function FormInfos() {
               </h3>
             </li>
 
-        )})}
+          )})}
         </ul> 
 
       

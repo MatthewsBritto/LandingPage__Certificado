@@ -38,12 +38,13 @@ export const FormInfosContainer = styled.div`
     article{
         width: 80%;
         margin:2rem auto;
+        text-align: center;
 
         p{
-            width: 50%;
+            width: 100%;
             font-weight: bolder;
-            font-size: .8rem;
-            line-height: 1.5rem;
+            font-size: 1rem;
+            line-height: 2rem;
         }
     }
 

@@ -2,64 +2,49 @@ import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
 
-    background:linear-gradient(145deg, #2f73ca 0%,#030242 100%);   
-    
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    margin: 0 auto;
-    
-  
-    /* @media (min-width: 768px){
+    background:linear-gradient(145deg, #2f73ca 0%,#030242 100%); 
+    width:100%;
+    height:100vh;  
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
 
+    .logo{
+        max-width: 50%;
+        height: 50%;
+        padding-right: 6rem;
+        
+    }
 
+    div{
+        max-width:50%;
+        height: 50%;
+        
+        padding-left:5rem ;
+        color: white;
+        
 
-
-        div {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:80% 20%;
-        grid-column-gap:2rem;
-        justify-items:center;
-        align-items:center;
-        grid-template-areas: "h3 img" "btn img";
-
-        padding:5rem 1.2rem;
-
-        img {
-            max-width: 100%;
-            height:100%;
-            
+        h3 {
+            font-size: 3rem;
+            line-height: 65px;
+            span{
+                font-size: 3rem;
+                color: #D4AF37;
+                font-weight: bolder;
+                
+            }
         }
 
-        button{
-            width:60%;
-            margin-top:0;
+        p {
+            
+            padding: 2rem 0;
+            font-size: 1.2rem;
+            line-height: 30px;
+            max-width: 80%;
         }
 
     }
 
-}
 
-@media (min-width: 1024px){
-    div {
-
-        padding:9rem 4rem;
-
-        img{
-            
-        }
-
-        h3{
-            font-size:2.2rem;
-            line-height:4.3rem;
-            max-width: 60%;
-            text-align:center;
-        }
-        button{
-            width:40%;
-            margin-top:1.5rem;
-        }
-    }   
-} */
 `;

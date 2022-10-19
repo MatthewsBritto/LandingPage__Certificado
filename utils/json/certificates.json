@@ -3,6 +3,7 @@
       "id": "7c6712ca-541e-4357-9663-2addf696410b",
       "title": "Sua Empresa",
       "name": "E-Cnpj",
+      "active":false,
       "type": [
          {
             "id": "9b9d9269-30b3-420b-bd68-ec84ce64ceaa ",
@@ -59,6 +60,7 @@
       "id": "96c7d86d-698d-4b60-9f0e-73be61d7dc71",
       "title": "Para Você",
       "name": "E-Cpf",
+      "active":false,
       "type": [
          {
             "id": "0168ff4c-ab54-4c2d-99a2-a04afe08edec",
