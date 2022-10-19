@@ -20,4 +20,11 @@ export const IntroContainer = styled.div`
       top: -20px;
     }
   }
+
+`;
+
+export const sectionContainer = styled.section `
+
+  display: flex;
+  
 `;

@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export const FormInfosContainer = styled.div`
   
-    /* background:linear-gradient(145deg, #2f73ca 0%,#030242 100%);  */
+   
     background-color:#f5f5f5;
     height: 100vh;
     width:100%;
