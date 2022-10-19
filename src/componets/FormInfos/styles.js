@@ -5,10 +5,11 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export const FormInfosContainer = styled.div`
   
-    background:linear-gradient(145deg, #2f73ca 0%,#030242 100%); 
+    /* background:linear-gradient(145deg, #2f73ca 0%,#030242 100%);  */
+    background-color:#f5f5f5;
     height: 100vh;
     width:100%;
-    color:white; 
+    color:black; 
     overflow:visible;
 
 
@@ -36,7 +37,7 @@ export const FormInfosContainer = styled.div`
     }
 
     article{
-        width: 80%;
+        width: 60%;
         margin:2rem auto;
         text-align: center;
 
@@ -88,10 +89,10 @@ export const FormInfosContainer = styled.div`
                 cursor:pointer;
                 letter-spacing: .1rem;
                 
-                -webkit-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
+                /* -webkit-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
                 -moz-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
                 box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
-                
+                 */
 
             }
 
@@ -134,9 +135,9 @@ export const FormInfosContainer = styled.div`
             border-radius:10px;
             
 
-            -webkit-box-shadow: 11px 2px 5px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 11px 2px 5px 0px rgba(0,0,0,0.75);
-            box-shadow: 11px 2px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
         }        
     }
 

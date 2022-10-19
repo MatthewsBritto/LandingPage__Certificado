@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from '../../assets/logo2.png';
+import logo from '../../assets/logo_outro.png';
+import logo2 from '../../assets/Logo.png';
 
- import { HeroContainer } from './styles';
+ import { HeroContainer,Container,ImgFundo } from './styles';
 
 function Hero() {
 
   return (
-  <HeroContainer>
-      
-      <img src={logo} className='logo'/>
-         <div>
-            <h3>
-               <span>Comodidade</span>, Praticidade e <span>Confiança</span>.
-            </h3>
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus, eaque sapiente corrupti exercitationem similique assumenda laborum reiciendis alias optio magnam.
-            </p>
+   <Container>
+      <ImgFundo src={'../../assets/bd_hero.jpg'}/>
+      <HeroContainer> 
 
-         </div>
-   </HeroContainer>)
+            <img src={logo} className='logo'/>
+               <div>
+                  <h3>
+                     <span>Comodidade</span>, Praticidade e <span>Confiança</span>.
+                  </h3>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus, eaque sapiente corrupti exercitationem similique assumenda laborum reiciendis alias optio magnam.
+                  </p>
+
+               </div> 
+            
+         </HeroContainer>
+   </Container>
+  )
 }
 
 export default Hero;

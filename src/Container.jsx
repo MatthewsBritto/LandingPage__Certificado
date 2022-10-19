@@ -3,9 +3,9 @@ import './main'
 import { MainContainer, CenterContainer} from './styles'
 import FormInfos from './componets/FormInfos';
 import Hero from './componets/Hero';
-import Carrossel from './componets/Carrossel';
+import Coments from './componets/Coments';
 import WhatsBtn from './componets/WhatsBtn';
-
+import Intro from './componets/Intro';
 
 function Container() {
 
@@ -13,9 +13,10 @@ function Container() {
   return (
     <MainContainer>
       <CenterContainer>
-        <Carrossel/>
+        <Intro/>
         <FormInfos/>
         <Hero/> 
+        <Coments/>
         <WhatsBtn/>          
       </CenterContainer>
     </MainContainer>

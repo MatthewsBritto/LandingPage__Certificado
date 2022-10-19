@@ -1,0 +1,68 @@
+{
+  "reviews": [
+    {
+      "displayName": "Vinicius Sousa",
+      "starRating": "FIVE",
+      "comment": "Top demais, super prestativos. Não é atoa que sou cliente a 10 anos!",
+      "createTime": "2022-06-10T01:24:58.829057Z",
+      "updateTime": "2022-06-10T01:24:58.829057Z",
+      "name": "accounts/106538140244931720770/locations/17568242332865957183/reviews/ChdDSUhNMG9nS0VJQ0FnSUNPanJId2tnRRAB"
+    },
+    {
+      "displayName": "Lívia Trimer",
+      "starRating": "FIVE",
+      "comment": "São excelentes! A Bruna me deu todo o respaldo e atenção. Recomendo muito.",
+      "createTime": "2022-06-07T15:34:58.278301Z",
+      "updateTime": "2022-06-07T15:34:58.278301Z",
+      "name": "accounts/106538140244931720770/locations/17568242332865957183/reviews/ChZDSUhNMG9nS0VJQ0FnSUNPMnJUWEJREAE"
+    },
+    {
+      "displayName": "Claudia Brunello",
+      "starRating": "FIVE",
+      "comment": "Muito bom ótimo profissionalismo, quando precisamos deles somos atendidos na hora.",
+      "createTime": "2021-10-05T14:37:20.370760Z",
+      "updateTime": "2021-10-05T14:37:20.370760Z",
+      "name": "accounts/106538140244931720770/locations/17568242332865957183/reviews/ChdDSUhNMG9nS0VJQ0FnSUQ2eGFxRHJ3RRAB"
+    },
+    {
+      "displayName": "Sidney Silveira",
+      "starRating": "FIVE",
+      "comment": "Ótimo atendimento. Resolvem tudo com rapidez.",
+      "createTime": "2021-10-01T15:18:08.189594Z",
+      "updateTime": "2021-10-01T15:18:08.189594Z",
+      "name": "accounts/106538140244931720770/locations/17568242332865957183/reviews/ChdDSUhNMG9nS0VJQ0FnSUQ2d2ZTOXl3RRAB"
+    },
+    {
+      "displayName": "Barbosa Silva",
+      "starRating": "FIVE",
+      "comment": "Atendimento de primeiro mundo sem falar do melhor café da Cidade.",
+      "createTime": "2021-07-06T00:09:41.874561Z",
+      "updateTime": "2021-07-06T00:09:41.874561Z",
+      "name": "accounts/106538140244931720770/locations/17568242332865957183/reviews/ChZDSUhNMG9nS0VJQ0FnSURxMnMycGRnEAE"
+    },
+    {
+      "displayName": "Liliane Santos",
+      "starRating": "FIVE",
+      "comment": "Equipe organizada , ágeis e muito atenciosos",
+      "createTime": "2021-05-19T13:42:00.158980Z",
+      "updateTime": "2021-05-19T13:42:00.158980Z",
+      "name": "accounts/106538140244931720770/locations/17568242332865957183/reviews/ChZDSUhNMG9nS0VJQ0FnSURLMTViclFREAE"
+    },
+    {
+      "displayName": "Janaina Gueleri",
+      "starRating": "FIVE",
+      "comment": "Excelente atendimento, profissionais competentes. Sensação de tranquilidade com o suporte da empresa a todo momento.",
+      "createTime": "2021-05-12T14:35:05.865721Z",
+      "updateTime": "2021-05-12T14:35:05.865721Z",
+      "name": "accounts/106538140244931720770/locations/17568242332865957183/reviews/ChdDSUhNMG9nS0VJQ0FnSURLdnF2a2xnRRAB"
+    },
+    {
+      "displayName": "Fabiano Belizario",
+      "starRating": "FIVE",
+      "comment": "Ótimo atendimento, e rapidez na entrega!!!",
+      "createTime": "2021-04-16T18:47:33.789025Z",
+      "updateTime": "2021-04-16T18:47:33.789025Z",
+      "name": "accounts/106538140244931720770/locations/17568242332865957183/reviews/ChZDSUhNMG9nS0VJQ0FnSUNLdzhla1NBEAE"
+    }
+  ]
+}

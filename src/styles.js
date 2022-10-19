@@ -5,6 +5,7 @@ export const MainContainer = styled.div`
     width:100vw;  
     margin: 0 auto;
     overflow: hidden;
+    background-color: black;
     `;
 
 export const CenterContainer = styled.div`
