@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import info from '../../../utils/json/certificates.json'
-import {FormInfosContainer} from './styles';
+import {FormInfosContainer, Type} from './styles';
 
 import Slider from 'react-slick';
 
@@ -14,6 +14,8 @@ function FormInfos() {
   const [idcomp,setIdComp] = useState('7c6712ca-541e-4357-9663-2addf696410b');
 
   const [type,setType] = useState([]);
+
+  const [selectedType,setSelectedType] = useState('');
 
   const [obj,setObj] = useState({});
 
@@ -36,9 +38,11 @@ function FormInfos() {
   }
     
   })
+
   const handleClick = useCallback((id)=> { 
 
     setIdComp(id);
+    setSelectedType(id);
     
     const obj = info.find(E => E.id === id);
     
@@ -89,7 +93,7 @@ function FormInfos() {
     ],
   };
 
-
+  console.log(selectedType)
   return (
 
     <FormInfosContainer>
@@ -97,14 +101,14 @@ function FormInfos() {
         <ul>
           {info.map((modo)=> {
 
+          console.log({active:selectedType===modo.id})
           return (
-
-            <li key={modo.id}>
+            <Type key={modo.id} active={selectedType===modo.id}>
               {/* selectedInfo={selectedInfo===modo.id} */}
               <h3>
                 <a className='title' onClick={()=> handleClick(modo.id)}> {modo.title} </a>
               </h3>
-            </li>
+            </Type>
 
           )})}
         </ul> 

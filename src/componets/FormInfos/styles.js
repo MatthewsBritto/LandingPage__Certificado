@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -22,18 +22,7 @@ export const FormInfosContainer = styled.div`
         height:20%;
         width:100%;
 
-        li{
-            list-style: none;
-        }
-        h3{
-            
-            a   {
-                font-weight: bold;
-                font-size:2.2rem;
-                cursor: pointer;
-                
-            }    
-        }
+    
     }
 
     article{
@@ -144,6 +133,22 @@ export const FormInfosContainer = styled.div`
 
 `;
 
+export const Type = styled.li`
+    list-style: none;
+    h3{
+        
+        a   {
+            font-weight: bold;
+            font-size:2.2rem;
+            cursor: pointer;
+            
+        }    
+    }
+
+    ${props => props.active && css`
+        background-color:#c53030;
+    `}
+`
 
 // export const Infos = styled.section`
 
