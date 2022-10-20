@@ -10,18 +10,19 @@ export const FormInfosContainer = styled.div`
     height: 100vh;
     width:100%;
     color:black; 
-    overflow:visible;
+   
 
 
 
-    ul { 
+    .typesOp{ 
 
         display:flex;
         align-items:center;
         justify-content:space-evenly;
         height:20%;
-        width:100%;
-
+        width:80%;
+        margin: .5rem auto;
+        
     
     }
 
@@ -65,13 +66,20 @@ export const FormInfosContainer = styled.div`
                 font-weight: bolder;
                 font-size:1.5rem;
                 letter-spacing: .1rem;
+                
+                span{
+                    color: #fac400;
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                    padding-left: .5rem;
+                }
             }
             a{
                 padding: .8rem 1.2rem;
                 margin: 1.2rem auto 0;
                 display: block;
                 width: 65%;
-                background-color: #67a8cd ;
+                background-color: #12a2d6;
                 font-size: 1rem;
                 font-weight: bolder;
                 border-radius:10px;
@@ -134,20 +142,25 @@ export const FormInfosContainer = styled.div`
 `;
 
 export const Type = styled.li`
-    list-style: none;
-    h3{
-        
-        a   {
-            font-weight: bold;
-            font-size:2.2rem;
-            cursor: pointer;
-            
-        }    
-    }
 
-    ${props => props.active && css`
-        background-color:#c53030;
-    `}
+    list-style: none;
+    a {
+        min-width: 49%;
+        height:95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:${props => props.active ? '#295872' :'#666666'};
+        font-size: ${props=> props.active ?  '2.2rem' : '1.8rem'};    
+        /* text-decoration: ${props=> props.active ? 'underline': 'none'}; */
+        border-bottom: ${props=> props.active ?'4px solid #295872': 'none'};
+        font-weight: bold;
+        cursor: pointer;
+        padding: .5rem 0;
+            
+    }    
+    
+
 `
 
 // export const Infos = styled.section`

@@ -98,16 +98,16 @@ function FormInfos() {
 
     <FormInfosContainer>
 
-        <ul>
+        <ul className='typesOp'>
           {info.map((modo)=> {
 
-          console.log({active:selectedType===modo.id})
+          console.log({active:selectedType===modo.id});
+          
           return (
-            <Type key={modo.id} active={selectedType===modo.id}>
-              {/* selectedInfo={selectedInfo===modo.id} */}
-              <h3>
-                <a className='title' onClick={()=> handleClick(modo.id)}> {modo.title} </a>
-              </h3>
+            <Type key={modo.id} active={selectedType === modo.id}>
+              
+                <a className='title' onClick={()=> handleClick(modo.id)}>{modo.title} </a>
+              
             </Type>
 
           )})}
@@ -127,7 +127,7 @@ function FormInfos() {
                         <div className="infos">
                           <p>{id.description}</p>
                           <p>{id.tempo}</p>
-                          <p className='price'>R${id.value},00</p>
+                          <p className='price'>R$<span>{id.value},00</span></p>
                         </div>
                         <a>Saiba Mais</a>
                       

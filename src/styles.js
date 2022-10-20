@@ -5,11 +5,11 @@ export const MainContainer = styled.div`
     width:100vw;  
     margin: 0 auto;
     overflow: hidden;
-    background-color: black;
+    position:absolute;
     `;
 
 export const CenterContainer = styled.div`
     max-width:1200px;
     margin:0 auto;
-
+    position: relative;
 `;
