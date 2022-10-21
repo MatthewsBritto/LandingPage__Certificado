@@ -5,10 +5,12 @@ import imgIntro from '../../assets/bd_intro.jpg';
 export const IntroContainer = styled.div`
 
   width:100%;
-  height:100vh;
+  height:87vh;
   background:url(${imgIntro});
+  /* background-color: #001c30; */
+  background-repeat: no-repeat;
   background-size:cover;
-  border-bottom: 2px solid black;
+
 
     
   img{
@@ -106,8 +108,9 @@ export const TextContainer= styled.div`
         padding: 1rem 0;
         font-size: 1.2rem;
         line-height:2rem;
-        max-width: 100%;
+        max-width: 70%;
         color: #fff;
+        margin: 0 auto;
       }
 
       button{

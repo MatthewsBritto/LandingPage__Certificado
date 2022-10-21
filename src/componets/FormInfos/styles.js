@@ -7,7 +7,7 @@ export const FormInfosContainer = styled.div`
   
    
     background-color:#f5f5f5;
-    height: 100vh;
+    height: 95vh;
     width:100%;
     color:black; 
    

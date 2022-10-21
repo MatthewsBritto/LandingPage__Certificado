@@ -6,6 +6,7 @@ export const MainContainer = styled.div`
     margin: 0 auto;
     overflow: hidden;
     position:absolute;
+   
     `;
 
 export const CenterContainer = styled.div`

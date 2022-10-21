@@ -1,11 +1,16 @@
 import React from 'react';
+import {FaWhatsapp} from 'react-icons/fa'; 
+// import {FaCar} from 'react-icons/'; 
+
 
 import { WhatsBtnContainer } from './styles';
+
+
 
 function WhatsBtn() {
   return (
    <WhatsBtnContainer>
-      <a><i>ICON</i></a>
+      <FaWhatsapp/>
    </WhatsBtnContainer>
   )
 };

@@ -1,8 +1,10 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import batatinha from '../../assets/batatinha.png';
-import Reviews from '../../../utils/json/reviews.json'
+import Reviews from '../../../utils/json/reviews.json';
+import Stars from './Star';
 
-import {ContainerComents} from './styles';
+
+import {ContainerComents,TitleSection} from './styles';
 
 
 
@@ -14,8 +16,7 @@ function Coments() {
 
   useEffect(()=>{
     
-    attReview(2)
-    console.log(reviews)
+    attReview(2);
 
   },[])
 
@@ -38,8 +39,8 @@ function Coments() {
   return (
 
    <ContainerComents>
-
      <section>
+        <TitleSection>Sua satisfação é nossa prioridade!</TitleSection>
         <ul>
 
           {reviews.map((review) => {
@@ -53,7 +54,7 @@ function Coments() {
                   <div className="infoCard">
                     <h4>{review.displayName}</h4>      
                     <p>{review.comment}</p>
-                    <span>{review.starRating}</span>
+                    <Stars/>
                   </div>
                 </li>
               

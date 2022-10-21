@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const WhatsBtnContainer = styled.div`
   
    width: 3rem;
-   height: 4rem;
+   height: 3rem;
    background-color: green;
    color: white;
    position:fixed;
@@ -11,13 +11,16 @@ export const WhatsBtnContainer = styled.div`
    right:2.5rem;
    text-align: center;
    border-radius: 50%;
-
-   i{
+   
+   
+   svg{
+      cursor: pointer;
       width: 100%;
       height: 100%;
       display:flex;
       align-items:center;
       justify-content:center;
-      padding:1rem;
+      padding:.3rem;
+      
    }
 `;

@@ -3,7 +3,7 @@ import img from '../../assets/bd_hero.jpg';
 
 export const HeroContainer = styled.div`
 
-    background:linear-gradient(200deg,#001531 0%,#00adbe 100%); 
+    background:linear-gradient(270deg,#001531 0%,#00adbe 50%,#001531 100%); 
     width:100%;
     height:100vh;  
     display: flex;
@@ -17,8 +17,8 @@ export const HeroContainer = styled.div`
 
     .logo{
         opacity: 1;
-        max-width: 55%;
-        height: 55%;
+        /* max-width: 50%; */
+        height: 40%;
         padding-right: 6rem;
         z-index: 2;
     }

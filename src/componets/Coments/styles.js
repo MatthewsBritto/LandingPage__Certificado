@@ -5,7 +5,7 @@ export const ContainerComents = styled.div`
     height:100vh;
     width:100%;
     display:flex;
-    background:linear-gradient(45deg, #2f73ca 0%,#030242 100%); 
+    background-color: #f5f5f5;
 
     section {
         width: 90%;
@@ -30,7 +30,7 @@ export const ContainerComents = styled.div`
                 min-height: 14rem;
                 border-radius: 20px;
                 color: white;
-                background-color: #295872;
+                background:linear-gradient(270deg,#001531 0%,#00adbe 50%,#001531 100%); 
                 margin: 0 1.5rem;
 
                 -webkit-box-shadow: 15px 14px 5px 0px rgba(0,0,0,0.75);
@@ -59,20 +59,16 @@ export const ContainerComents = styled.div`
 
                         h4 {
                             font-size: 1.2rem;
-                            padding:.5rem 0;
+                            padding:.2rem 0;
                             
                         }
 
                         p{
                             padding: .8rem 0;
                             line-height: 1.5rem;
+                            font-weight: bold;
                         }
-                        span{
-                        
-                            
-                            
-                        
-                        }
+                    
 
                     }
             }
@@ -82,3 +78,23 @@ export const ContainerComents = styled.div`
   
 `;
 
+
+export const StarsContainer = styled.span`
+
+    display: flex;
+    width: 100%;
+    height: 20%;
+        svg {
+            color:#fac400;
+            margin-left: 10px;
+            font-size: 1.2rem;
+        }
+    
+`
+export const TitleSection = styled.h2`
+
+        color: #001531;
+        font-size: 3rem;
+        text-align: center;
+
+`
