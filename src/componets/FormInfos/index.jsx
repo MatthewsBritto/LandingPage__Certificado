@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import info from '../../../utils/json/certificates.json'
-import {FormInfosContainer, Type} from './styles';
+import {FormInfosContainer, Type,ImgInfo} from './styles';
+
 
 import Slider from 'react-slick';
 
@@ -74,7 +75,7 @@ function FormInfos() {
     infinite: true,
     speed: 800,
     slidesToShow:3,
-    slidesToScroll: 2,
+    slidesToScroll:3,
     autoplay: false,
     autoplaySpeed: 5000,
     pauseOnFocus: true,
@@ -121,13 +122,14 @@ function FormInfos() {
               return  ( 
 
 
-                  <div key={type.id}>
+                  <div key={type.id} style={{width:200}}>
                       
                         <h3>{name} {id.label}</h3>
+                        <ImgInfo src={id.img}/>
                         <div className="infos">
                           <p>{id.description}</p>
                           <p>{id.tempo}</p>
-                          <p className='price'>R$<span>{id.value},00</span></p>
+                          <p className='price'>R$ {id.value},00</p>
                         </div>
                         <a>Saiba Mais</a>
                       

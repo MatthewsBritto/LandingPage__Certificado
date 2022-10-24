@@ -3,6 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
+
 export const FormInfosContainer = styled.div`
   
    
@@ -23,10 +24,12 @@ export const FormInfosContainer = styled.div`
         width:80%;
         margin: .5rem auto;
         
+        
     
     }
 
-    article{
+    article {
+
         width: 60%;
         margin:2rem auto;
         text-align: center;
@@ -37,6 +40,13 @@ export const FormInfosContainer = styled.div`
             font-size: 1rem;
             line-height: 2rem;
         }
+
+        @media (max-width: 425px){
+
+            p {
+                line-height:1.5rem;
+            }    
+        } 
     }
 
     section {
@@ -56,11 +66,11 @@ export const FormInfosContainer = styled.div`
                 border-bottom: 1px solid white;
             }
             .infos{
-                margin-top: 3.2rem;
+                margin-top: 1.2rem;
             }
             p{
                 font-size:1.2rem;
-                padding:.7rem;
+                padding:.1rem;
             }
             .price{
                 font-weight: bolder;
@@ -84,12 +94,7 @@ export const FormInfosContainer = styled.div`
                 font-weight: bolder;
                 border-radius:10px;
                 cursor:pointer;
-                letter-spacing: .1rem;
-                
-                /* -webkit-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
-                box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
-                 */
+                letter-spacing: .1rem; 
 
             }
 
@@ -112,7 +117,7 @@ export const FormInfosContainer = styled.div`
 
         /* carousel styles */
 
-        .slick-slider {
+        /* .slick-slider {
             height: 100%;
             
         }
@@ -123,7 +128,7 @@ export const FormInfosContainer = styled.div`
             color: white;
         }
         .slick-slide {
-            background-color:#295872;
+            background-color:#295872;}
             text-align:center;
             width:250px;
             height:400px;
@@ -135,7 +140,9 @@ export const FormInfosContainer = styled.div`
             -webkit-box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
             -moz-box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
             box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
-        }        
+        }   */
+        .slick-slide {
+            background-color:#295872;}
     }
 
 
@@ -144,6 +151,7 @@ export const FormInfosContainer = styled.div`
 export const Type = styled.li`
 
     list-style: none;
+    
     a {
         min-width: 49%;
         height:95%;
@@ -158,76 +166,25 @@ export const Type = styled.li`
         cursor: pointer;
         padding: .5rem 0;
             
-    }    
+    }
+
+    @media (max-width: 425px){
+        a {
+            font-size: ${props=> props.active ?  '1.5rem' : '1rem'};
+        }    
+    }
     
 
 `
 
-// export const Infos = styled.section`
+export const ImgInfo = styled.img`
 
-//     height:50%;
-//     width: 100%;
-//     background-color: green;
-//     margin-top: 3rem;
-//     display:flex;
-//     justify-items: center;
-//     align-items: center;
-//     /* flex-wrap: wrap; */
-//     overflow: hidden;
     
-
-//     &::after{
-//         content:'<';
-//         position:absolute;
-//         font-size:5rem ;
-//         top:45%;
-//         left: 2rem;
-//         z-index: 2;
-//     }
-//     &::before{
-
-//         content:'>';
-//         position:absolute;
-//         font-size:5rem ;
-//         top:45%;
-//         right: 2rem;
-//         z-index: 2;
-//     }
-
-//     div {
-//         height:90%;
-//         min-width:25%;
-//         background-color:red;
-//         margin:2rem;
-//         display:flex;
-//         align-items:center;
-//         flex-direction: column;
-//         flex: 0 0 25%;
-
-//         position: relative;
-//         left: 6% ;
-
-//         h3{
-//             font-size: 2rem;
-//             padding:1rem;
-//         }
-//         p{
-//             padding:.8rem;
-//         }
-//         button{
-//             padding:.5rem 1rem;
-//             margin-top: 1rem;
-//         }
-        
-//     }
-
-//     @media (min-width: 768px){
-
-//     li{
-//             font-size: 2.3rem;
-//             padding: 0 1rem;
-//         }
-//     }
+    height:80px;
+    width:100px;
+    margin: 0 auto;
+    background-size: contain;
+    padding: 1rem;
 
 
-// `
+`

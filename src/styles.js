@@ -14,7 +14,7 @@ export const MainContainer = styled.div`
         letter-spacing: 2px;
     } 
 
-    p,a{
+    li,p,a{
 
        font-family: 'Poppins', sans-serif;
     }

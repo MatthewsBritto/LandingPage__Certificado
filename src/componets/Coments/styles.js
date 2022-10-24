@@ -9,16 +9,16 @@ export const ContainerComents = styled.div`
 
     section {
         width: 90%;
-        height: 80%;
+        height: 100%;
         margin: auto;
 
         ul {
 
             margin-top: 5rem;
             width: 100%;
-            height: 80%;
+            height: 60%;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             flex-wrap: wrap;
 
@@ -26,18 +26,18 @@ export const ContainerComents = styled.div`
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-                flex: 0 0 40%;
-                min-height: 14rem;
+                flex: 0 0 45%;
+                height: 14rem;
                 border-radius: 20px;
                 color: white;
                 background:linear-gradient(270deg,#001531 0%,#00adbe 50%,#001531 100%); 
-                margin: 0 1.5rem;
+             
 
                 -webkit-box-shadow: 15px 14px 5px 0px rgba(0,0,0,0.75);
                 -moz-box-shadow: 15px 14px 5px 0px rgba(0,0,0,0.75);
                 box-shadow: 15px 14px 5px 0px rgba(0,0,0,0.75);
                 
-                
+            
                     .imgCard {
                         
                         max-width: 25%;
@@ -50,16 +50,21 @@ export const ContainerComents = styled.div`
                             border-radius: 50%;
 
                         }
+                        @media (max-width:425px) {
+                            
+                            max-width:15%;
+                            
+                        }
                     }
 
-                    .infoCard{
+                    .infoCard {
                         width: 60%;
-                        height: 100%;
-                        
+                       
+                        align-items: center ;
 
                         h4 {
                             font-size: 1.2rem;
-                            padding:.2rem 0;
+                            padding:.8rem 0;
                             
                         }
 
@@ -68,8 +73,19 @@ export const ContainerComents = styled.div`
                             line-height: 1.5rem;
                             font-weight: bold;
                         }
-                    
+                        @media (max-width:425px) {
+                            
+                            width:80%;
+                            
+                            h4{
+                                padding:.4rem 0;
+                            }
 
+                            p{
+                                width: 100%;
+                            }
+                            
+                        }
                     }
             }
         }
@@ -78,8 +94,24 @@ export const ContainerComents = styled.div`
             width: 100%;
 
             li {
-                width: 60%;
+                width: 50%;
             }
+        }
+        @media (max-width:425px) {
+
+
+            ul {
+
+                margin-top: 0;
+                
+            }
+
+            li{
+                flex: 0 0 100% !important;
+                height: 11rem !important;
+                margin-top: 1.2rem;
+            }
+           
         }
     
     }
@@ -104,6 +136,14 @@ export const TitleSection = styled.h2`
         color:#fac400;
         font-size: 3rem;
         text-align: center;
+        padding: 2rem 0;
+
+        @media (max-width:425px) {
+
+            font-size:2rem;
+            padding:1rem 0;
+            
+        }
 
 
 `

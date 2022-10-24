@@ -68,7 +68,32 @@ export const HeroContainer = styled.div`
                 max-width: 100%;
             }
         }
+    }
+    @media (max-width:425px){
+
+        flex-direction: column;
+
+        .logo{
+            height: 20%;
         }
+
+        div {
+            height: 75%;
+            padding-left: 0;
+
+            h3,span{
+                font-size: 2rem !important;
+                line-height: 45px;
+                padding: 1.2rem 0;
+
+            }
+            p{
+                
+                font-size: 1.2rem;
+                line-height: 35px;
+            }
+        }
+    }
 
 `;
 export const ImgFundo = styled.img`

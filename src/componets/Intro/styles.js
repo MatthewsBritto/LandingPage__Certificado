@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import imgIntro from '../../assets/bd_intro.jpg';
+import imgIntro from '../../assets/bd_intro2.jpg';
 
 
 export const IntroContainer = styled.div`
@@ -7,7 +7,7 @@ export const IntroContainer = styled.div`
   width:100%;
   height:87vh;
   background:url(${imgIntro});
-  /* background-color: #001c30; */
+  background-color: #001c30;
   background-repeat: no-repeat;
   background-size:cover;
 
@@ -30,7 +30,7 @@ export const IntroContainer = styled.div`
 
       
       img {
-        height: 150%;
+        
         top: -15px;
         width: 40%;
         
@@ -44,10 +44,9 @@ export const SectionContainer = styled.section`
 
   display: flex;
   width: 100%;
-  height: 90%;
+  height: 100%;
   align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row-reverse;
+  justify-content: space-between;
   text-align: center;
 
     
@@ -82,23 +81,19 @@ export const SectionContainer = styled.section`
 `;
 export const TextContainer= styled.div`
 
-      width: 35%;
-      height: 55%;
-      margin-bottom: 1.2rem;
-      background-color:#295872;
-      padding: 1rem;
-      border-radius: 12px;
-      border:1px solid #00adbe;
+      width: 50%;
+      height: 100%;
+      /* margin-bottom: 1.2rem; */
+      /* background-color:#295872; */
+      padding-top: 20%;
+
       
-       -webkit-box-shadow: 15px 10px 10px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 15px 10px 10px 0px rgba(0,0,0,0.75);
-        box-shadow: 15px 10px 10px 0px rgba(0,0,0,0.75);
-                
+
       
       h2{
 
         padding: 1rem 0;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-weight: bold;
         color: #fac400;
         
@@ -106,8 +101,8 @@ export const TextContainer= styled.div`
       p {
 
         padding: 1rem 0;
-        font-size: 1.2rem;
-        line-height:2rem;
+        font-size: 2rem;
+        line-height:2.5rem;
         max-width: 70%;
         color: #fff;
         margin: 0 auto;
@@ -115,7 +110,7 @@ export const TextContainer= styled.div`
 
       button{
         display:block;
-        width: 50%;
+        width: 30%;
         padding: .7rem;
         border-radius: 10px;
         border: none;
@@ -147,18 +142,25 @@ export const TextContainer= styled.div`
 
     }
     @media (max-width: 425px){
-
+    padding-top: 45%;
     display: block;
-    text-align: center;
+    text-align: left;
     width: 65%;
 
-    p{
-      line-height: 1.4rem;
+    h2{
+      font-size: 2rem;
+      padding: 2rem 0;
     }
 
-    img {
-      height: 30%;
-      margin: 2.8rem 0 ;
+    p{
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 0;
+    }
+
+    button{
+      width: 50%;
+      margin-top: 5rem;
     }
 }
 
@@ -172,12 +174,17 @@ export const LogoContainer = styled.header`
     min-width: 100%;
     height: 10%;
     margin: 0 auto;
-    z-index:10;
+    z-index:2;
+    position: absolute;
   
     .logo{
       max-width:25%
     }
-   
+    @media (max-width: 425px){
+      .logo{
+        max-width:100%;
+      }
+    }
 
 `
 

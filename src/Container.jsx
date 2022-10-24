@@ -6,7 +6,7 @@ import Coments from './componets/Coments';
 import WhatsBtn from './componets/WhatsBtn';
 import Intro from './componets/Intro';
 import Difs from './componets/Difs';
-import Footer from './componets/Footer';
+
 
 
 function Container() {

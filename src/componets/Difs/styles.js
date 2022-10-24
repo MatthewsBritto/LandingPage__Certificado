@@ -19,10 +19,14 @@ export const DifsList = styled.ul`
    width: 95%;
    display: flex;
    align-items: center;
-   justify-content:center;
    flex-wrap: wrap;  
    
-   
+   @media (max-width: 768px){
+      
+      justify-content:flex-start;
+      width: 100%;
+      margin-left: 10px;
+   }
    `
 
 export const DifsItem = styled.li`
@@ -65,11 +69,11 @@ export const DifsItem = styled.li`
          color: white;
       }
    }
-
    @media (max-width: 768px){
       
       padding:.5rem 1rem;
-        
+      width:100%;  
+      flex:0 0 45%;
       h3{
          padding-top: 0;
       }
@@ -78,6 +82,7 @@ export const DifsItem = styled.li`
       }
 
    }
+
 
 `
 
