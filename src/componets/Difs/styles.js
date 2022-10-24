@@ -62,9 +62,21 @@ export const DifsItem = styled.li`
          font-size: 1.2rem;
          line-height:1.5rem;
          font-weight:bolder;
-         /* text-align: justify; */
          color: white;
       }
+   }
+
+   @media (max-width: 768px){
+      
+      padding:.5rem 1rem;
+        
+      h3{
+         padding-top: 0;
+      }
+      div{
+         width: 100%;
+      }
+
    }
 
 `

@@ -73,6 +73,14 @@ export const ContainerComents = styled.div`
                     }
             }
         }
+        @media (max-width:768px) {
+
+            width: 100%;
+
+            li {
+                width: 60%;
+            }
+        }
     
     }
   
@@ -93,8 +101,9 @@ export const StarsContainer = styled.span`
 `
 export const TitleSection = styled.h2`
 
-        color: #001531;
+        color:#fac400;
         font-size: 3rem;
         text-align: center;
+
 
 `
