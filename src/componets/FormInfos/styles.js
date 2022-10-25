@@ -117,7 +117,7 @@ export const FormInfosContainer = styled.div`
 
         /* carousel styles */
 
-        /* .slick-slider {
+        .slick-slider {
             height: 100%;
             
         }
@@ -128,7 +128,7 @@ export const FormInfosContainer = styled.div`
             color: white;
         }
         .slick-slide {
-            background-color:#295872;}
+            background-color:#295872;
             text-align:center;
             width:250px;
             height:400px;
@@ -140,10 +140,8 @@ export const FormInfosContainer = styled.div`
             -webkit-box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
             -moz-box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
             box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
-        }   */
-        .slick-slide {
-            background-color:#295872;}
-    }
+    }   }
+        
 
 
 `;

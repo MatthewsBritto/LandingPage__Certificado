@@ -107,7 +107,7 @@ function FormInfos() {
           return (
             <Type key={modo.id} active={selectedType === modo.id}>
               
-                <a className='title' onClick={()=> handleClick(modo.id)}>{modo.title} </a>
+                <a className='title' onClick={()=> handleClick(modo.id)}> {modo.title} </a>
               
             </Type>
 
@@ -122,7 +122,7 @@ function FormInfos() {
               return  ( 
 
 
-                  <div key={type.id} style={{width:200}}>
+                  <div key={type.id} >
                       
                         <h3>{name} {id.label}</h3>
                         <ImgInfo src={id.img}/>
